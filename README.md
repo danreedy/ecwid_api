@@ -6,6 +6,8 @@ A gem to interface with the Ecwid REST APIs.
 [![Build Status](https://travis-ci.org/vishalzambre/ecwid_api.svg?branch=master)](https://travis-ci.org/vishalzambre/ecwid_api)
 [![Gem Version](https://badge.fury.io/rb/ecwid_api.svg)](https://badge.fury.io/rb/ecwid_api)
 
+<a href="https://www.buymeacoffee.com/vishalzambre" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ## API v3 Warning!
 
 This is for the latest version of the API, also known as v3, which is currently
