@@ -32,13 +32,12 @@ module EcwidApi
       @store_id, @token, @adapter = store_id, token, adapter
 
       @connection = Faraday.new store_url do |conn|
-        conn.request  :oauth2, token, param_name: :token
-        conn.request  :json
-
+        conn.request :authorization, "Bearer", @token
+        conn.request :json
         conn.response :json, content_type: /\bjson$/
         conn.response :logger
-
-        conn.adapter  adapter
+        conn.adapter Faraday.default_adapter
+        conn.url_prefix = URI("https://app.ecwid.com/api/v3/#{@store_id}")
       end
 
       @categories     = Api::Categories.new(self)
